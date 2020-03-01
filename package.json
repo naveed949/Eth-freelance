@@ -1,0 +1,29 @@
+{
+  "name": "Freelancing-platform",
+  "version": "1.0.1",
+  "description": "This is freelancing platform based on Ethereum Blockchain",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "./node_modules/.bin/truffle compile",
+    "_deploy": "./node_modules/.bin/truffle deploy --network ",
+    "deploy-local": "npm run _deploy local",
+    "deploy-rinkeby": "npm run _deploy rinkeby",
+    "test": "./node_modules/.bin/truffle test"
+  },
+  "license": "Apache-2",
+  "devDependencies": {
+    "ganache-cli": "^6.1.0",
+    "truffle": "5.1.14",
+    "truffle-hdwallet-provider": "1.0.5"
+  },
+  "dependencies": {
+    "bn.js": "^4.11.8",
+    "dotenv": "^6.0.0",
+    "openzeppelin-solidity": "^2.5.0",
+    "solc": "^0.5.16",
+    "truffle-assertions": "^0.9.2"
+  }
+}
